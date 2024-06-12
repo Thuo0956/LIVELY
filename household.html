@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="addHouseholdButton">Add Household Items</button>
+    </header>
+    <main>
+        <div id="householdContainer">
+            <!-- Household items will be added here -->
+        </div>
+    </main>
+    <div id="householdFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Household Items</h2>
+            <form id="householdForm">
+                <input type="text" placeholder="Item Name" required>
+                <textarea placeholder="Brief of the item" required></textarea>
+                <textarea placeholder="Why choose this item" required></textarea>
+                <input type="text" placeholder="Contact Information" required>
+                <input type="url" placeholder="Website Link">
+                <input type="file" multiple required>
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+    </div>
+    <div id="commentsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Comments</h2>
+            <div id="commentsContainer"></div>
+            <input type="text" placeholder="Comment" id="commentInput">
+            <button id="submitComment">Submit</button>
+        </div>
+    </div>
+    <ul>
+        <li><a href="construction.html"><img src="construction_13967859.png" alt="Construction Icon" width="30" height="30"> Construction & Renovation</a></li>
+        <li><a href="household.html"><img src="home-theatre-and-monitor-on-livingroom-furniture (1).png" alt="Households Icon"  width="30" height="30"> Households</a></li>
+        <li><a href="rentals.html"><img src="exchange_4407775 (1).png" alt="Rentals Icon"  width="30" height="30"> Rentals</a></li>
+      </ul>
+    <script src="scripts.js"></script>
+</body>
+</html>

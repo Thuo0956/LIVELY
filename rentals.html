@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="rentalimage"><img  src="rental1.jpg" alt="rentals image" width="250" length="250"></div>
+    <header>
+        <button id="addRentalsButton">Add Rentals</button>
+    </header>
+    <main>
+        <div id="rentalsContainer">
+            <!-- Rentals will be added here -->
+        </div>
+    </main>
+    <div id="rentalFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Rentals</h2>
+            <form id="rentalForm">
+                <input type="text" placeholder="Rental Name" required>
+                <textarea placeholder="Brief of the rental" required></textarea>
+                <textarea placeholder="Why choose this rental" required></textarea>
+                <input type="text" placeholder="Contact Information" required>
+                <input type="url" placeholder="Website Link">
+                <input type="file" multiple required>
+                <button type="submit">Add Rental</button>
+            </form>
+        </div>
+    </div>
+    <div id="commentsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Comments</h2>
+            <div id="commentsContainer"></div>
+            <input type="text" placeholder="Comment" id="commentInput">
+            <button id="submitComment">Submit</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+<footer>
+    <ul>
+        <li><a href="construction.html"><img src="construction_13967859.png" alt="Construction Icon" width="30" height="30"> Construction & Renovation</a></li>
+        <li><a href="household.html"><img src="home-theatre-and-monitor-on-livingroom-furniture (1).png" alt="Households Icon"  width="30" height="30"> Households</a></li>
+        <li><a href="rentals.html"><img src="exchange_4407775 (1).png" alt="Rentals Icon"  width="30" height="30"> Rentals</a></li>
+      </ul>
+</footer>
+</html>
